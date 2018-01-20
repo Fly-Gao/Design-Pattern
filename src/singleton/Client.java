@@ -6,9 +6,13 @@ public class Client {
         SingletonOne singletonOne2 = SingletonOne.getInstance();
         System.out.println(singletonOne == singletonOne2);
 
+
+
         Class<?> clazz = Class.forName("singleton.SingletonOne");
 
         SingletonOne instance = (SingletonOne) clazz.newInstance();
         System.out.println(singletonOne == instance);
+
+
     }
 }
